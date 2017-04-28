@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registracija</title>
+</head>
+<body>
+	<h1>Registracija</h1>
+
+	<div class="center">
+		<form  name = "registrationForm">
+		
+			<label>Username</label><br/>
+			<input name = "name" type="text" class="form-control" data-ng-model = "$parent.user.username"  required><br/>
+			
+			<label>Password</label><br/>
+			<input id="pass" type="password" class="form-control" data-ng-model = "$parent.user.password" required><br/>
+			 
+			<label>Repeat password</label><br/>
+			<input id="passRepeat" type="password" class="form-control"  required><br/><br/>
+			
+			
+			<button class="btn btn-default" data-ng-click= "submitRegistration()" >Sign up </button>
+			<button class="btn btn-default" data-ui-sref="login" >Cancel </button>
+		
+		</form>
+	</div>
+</body>
+</html>

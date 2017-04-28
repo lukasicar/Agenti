@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.chat</groupId>
+  <artifactId>Chat</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Chat Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-server</artifactId>
+    	<version>1.17.1</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-servlet</artifactId>
+    	<version>1.17.1</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-json</artifactId>
+    	<version>1.17.1</version>
+	</dependency>
+	
+	  <dependency>
+
+            <groupId>org.jboss.resteasy</groupId>
+
+            <artifactId>resteasy-jaxrs</artifactId>
+
+            <version>3.0.14.Final</version>
+
+            <scope>provided</scope>
+
+        </dependency>
+	
+  </dependencies>
+  <build>
+    <finalName>Chat</finalName>
+  </build>
+</project>
